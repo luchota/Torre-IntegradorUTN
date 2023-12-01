@@ -203,3 +203,27 @@ img{
   padding-bottom: 10px;
 }
 
+
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
