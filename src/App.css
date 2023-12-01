@@ -10,15 +10,15 @@
 }
 
 body{
-  
+    filter: contrast(120%);
     width: 100%;
     height: auto;
-    background:rgb(18, 18, 18);
+    background-image: url("./assets/outing_to_the_museum.jpg");
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
-
 }
+
 
 .home {
   max-width: 1200px;
@@ -136,6 +136,7 @@ a{
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  
 }
 
 .register-container {
@@ -144,15 +145,18 @@ a{
   align-items: center;
   height: 100vh;
   margin: 0;
+  
 }
 
 
 .register-form {
   width: 350px; 
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #696868;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(56, 56, 56, 0.58);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
 }
 
 h2{
@@ -171,8 +175,8 @@ input {
 }
 
 button {
-  background-color: #dbdddf;
-  color: #101010;
+  background-color: rgb(6, 76, 23);
+  color: #f2eded;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -190,7 +194,7 @@ button {
 .login-form{
   width: 350px; 
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #737373;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -43,13 +43,17 @@ const ProductDetail = () => {
   return (
     <div>
       <Navbar />
-      <h2>Detalle de Producto</h2>
-      <p>ID del Producto: {product.id}</p>
-      <p>Nombre: {product.name}</p>
-      <p>Descripción: {product.description}</p>
-      <p>Precio: ${product.price}</p>
-      <p>SKU: {product.sku}</p>
-      <button onClick={handleBuyClick}>Comprar</button>
+      <div className="register-container">
+        <div className="product-detail-info">
+          <h2>Detalle de Producto</h2>
+          <p>ID del Producto: {product.id}</p>
+          <p>Nombre: {product.name}</p>
+          <p>Descripción: {product.description}</p>
+          <p>Precio: ${product.price}</p>
+          <p>SKU: {product.sku}</p>
+          <button onClick={handleBuyClick}>Comprar</button>
+        </div>
+      </div>
     </div>
   );
 };

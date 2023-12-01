@@ -34,24 +34,29 @@ const Login = () => {
   };
 
   return (
-    <div className='register-container'>
-    <Navbar /> 
-    {error && <p style={{ color: 'red' }}>{error}</p>}
-    <form onSubmit={handleSubmit}>
-      <label>
-        Email:
-        <input type="email" value={email} onChange={handleEmailChange} />
-      </label>
-      <br />
-      <label>
-        Contraseña:
-        <input type="password" value={password} onChange={handlePasswordChange} />
-      </label>
-      <br />
-      <button type="submit">Iniciar Sesión</button>
-    </form>
+<div>
+  <aside>
+    <Navbar />
+  </aside>
+  <div className="login-container">
+    <div className="register-form">
+      <h2>Login</h2>
+      {error && <p className="error-message">{error}</p>}
+      <form onSubmit={handleSubmit}>
+        <label>
+          <a>Email:</a>
+          <input type="email" value={email} onChange={handleEmailChange} />
+        </label>
+        <label>
+          <a>Contraseña:</a>
+          <input type="password" value={password} onChange={handlePasswordChange} />
+        </label>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
   </div>
-  );
+</div>
+);
 };
 
 export default Login;
